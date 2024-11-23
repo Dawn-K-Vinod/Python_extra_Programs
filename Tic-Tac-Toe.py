@@ -1,3 +1,9 @@
+"""
+Author: Dawn K Vinod
+Date: 23-11-2024
+Description: A simple `Tic-Tac-Toe` game. 
+80% of the code and logic done by Me, and the rest 20% done by ChatGPT.
+"""
 # Initialize global variables for the board
 R11 = R12 = R13 = R21 = R22 = R23 = R31 = R32 = R33 = None
 
