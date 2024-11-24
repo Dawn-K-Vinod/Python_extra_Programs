@@ -48,10 +48,14 @@ def decode_msg(msg):
 
         #Display decoded msg, if more than half the words in the msg is meaningful
         if count >= len(words) // 2:
-            return decode
+            print(f"\nDecoded msg: {decode}\n")
+            break
+        elif count > 0:
+            print(f"Partial Decode (Shift {shift}): {decode}")
+            break
 
     else:
-        return "Sorry Its very hard to decode the given msg."
+        print("Sorry Its very hard to decode the given msg.")
 
 print("Encode or Decode a Message:")
 print("1. Encode")
@@ -63,8 +67,4 @@ if choice=="1":
     encoded_msg = encode_msg(message)
     print(f"\nEncoded msg: {encoded_msg}\n")
 elif choice=="2":
-    decoded_msg = decode_msg(message)
-    if decoded_msg == "Sorry Its very hard to decode the given msg.":
-        print(decoded_msg)
-    else:
-        print(f"\nDecoded msg: {decoded_msg}\n")
+    decode_msg(message)
