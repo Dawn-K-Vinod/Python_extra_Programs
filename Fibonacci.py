@@ -7,4 +7,4 @@ def fibonacci_series(n):
     return fibonacci_sequence
 nth=int(input("Enter a number 'n' for displaying fibonacci series upto 'n':"))
 result=fibonacci_series(nth)
-print(f"The Fibonacci Sequence: {result}")
+print(f"The first {nth} terms of the Fibonacci sequence are:: {result}")
