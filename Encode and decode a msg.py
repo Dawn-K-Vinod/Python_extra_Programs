@@ -2,6 +2,7 @@
 Author: Dawn K Vinod
 Date: 24-11-2024
 Description: Python program to Encode and decode any given message.
+95% of the code and logic done by Me, and the rest 5% done by ChatGPT.
 """
 import enchant
 dictionary=enchant.Dict("en_US")
